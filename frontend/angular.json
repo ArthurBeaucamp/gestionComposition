@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "gestion-composition"
+    }
+  },
+  "defaultProject": "gestion-composition",
+  "cli": {
+    "analytics": "95a8f153-bf6f-4bcb-8df4-37a819d9c0f1"
+  }
 }
