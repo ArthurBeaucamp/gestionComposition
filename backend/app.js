@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const db = require('./config/keys').mongoURI;
+const compositionRoutes = require('./routes/composition');
 
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB okay !'))
@@ -18,5 +19,7 @@ app.use((req, res, next) => {
 });
 
 app.use(bodyParser.json());
+
+app.use('/api/composition', compositionRoutes);
 
 module.exports = app;
