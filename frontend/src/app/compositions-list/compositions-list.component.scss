@@ -1,0 +1,43 @@
+.container {
+  color: #E1E1E1;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 1.5rem;
+}
+
+.composition-container {
+  cursor: pointer;
+  background: #16161A;
+  width: 600px;
+  margin: 0 auto .75rem;
+  padding: .75rem;
+  text-align: left;
+  border-radius: 15px;
+  transition: 250ms linear;
+
+  &:hover {
+    transform: scale(1.05);
+
+    h2 {
+      color: #B4B4B4;
+    }
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.details-container {
+  padding: .25rem 0 0 .25rem;
+  color: #A10684;
+  display: flex;
+  flex-wrap: nowrap;
+
+  li:not(:last-child) {
+    padding-right: .75rem;
+  }
+}

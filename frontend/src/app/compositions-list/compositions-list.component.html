@@ -1,1 +1,15 @@
-{{ compositions | json }}
+<div class="container">
+  <h1>Liste des compositions disponibles</h1>
+
+  <div *ngIf="compositions.length > 0">
+    <div class="composition-container" *ngFor="let composition of compositions">
+      <h2>{{ composition.title }}</h2>
+
+      <ul class="details-container" *ngIf="composition.type || composition.baseTempo || composition.tunning">
+        <li *ngIf="composition.type">{{ composition.type }}</li>
+        <li *ngIf="composition.baseTempo">{{ composition.baseTempo }}BPM</li>
+        <li *ngIf="composition.tunning">#{{ composition.tunning }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
