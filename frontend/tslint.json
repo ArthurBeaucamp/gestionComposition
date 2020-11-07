@@ -73,6 +73,7 @@
         "always"
       ]
     },
+    "no-any": true,
     "space-before-function-paren": {
       "options": {
         "anonymous": "never",
